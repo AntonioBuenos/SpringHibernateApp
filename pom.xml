@@ -13,7 +13,7 @@
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
 
-        <spring.version>5.2.1.RELEASE</spring.version>
+        <spring.version>5.3.5</spring.version>
         <hibernate.version>5.4.28.Final</hibernate.version>
     </properties>
 
@@ -78,7 +78,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.18</version>
+            <version>42.4.1</version>
         </dependency>
 
         <!--ORM Related dependencies -->
@@ -103,6 +103,14 @@
             <artifactId>lombok</artifactId>
             <version>1.18.22</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa -->
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-jpa</artifactId>
+            <version>2.4.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>
