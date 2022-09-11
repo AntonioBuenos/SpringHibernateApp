@@ -2,6 +2,8 @@ package by.smirnov.springhibernateapp.services;
 
 import by.smirnov.springhibernateapp.models.Person;
 import by.smirnov.springhibernateapp.repositories.PeopleRepository;
+import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -11,14 +13,10 @@ import java.util.Optional;
 
 @Service
 @Transactional(readOnly = true)
+@AllArgsConstructor
 public class PeopleService {
 
     private final PeopleRepository peopleRepository;
-
-    @Autowired
-    public PeopleService(PeopleRepository peopleRepository) {
-        this.peopleRepository = peopleRepository;
-    }
 
     public List<Person> findAll() {
         return peopleRepository.findAll();
@@ -43,5 +41,9 @@ public class PeopleService {
     @Transactional
     public void delete(int id){
         peopleRepository.deleteById(id);
+    }
+
+    public void test(){
+        System.out.println("test with debug");
     }
 }

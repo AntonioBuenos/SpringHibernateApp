@@ -1,8 +1,9 @@
 package by.smirnov.springhibernateapp.controllers;
 
 import by.smirnov.springhibernateapp.models.Person;
+import by.smirnov.springhibernateapp.services.ItemService;
 import by.smirnov.springhibernateapp.services.PeopleService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -12,18 +13,20 @@ import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/people")
+@AllArgsConstructor
 public class PeopleController {
 
     private final PeopleService peopleService;
-
-    @Autowired
-    public PeopleController(PeopleService peopleService) {
-        this.peopleService = peopleService;
-    }
+    private final ItemService itemService;
 
     @GetMapping()
     public String index(Model model) {
         model.addAttribute("people", peopleService.findAll());
+
+        itemService.findByItemName("Airpods");
+        itemService.findByOwner(peopleService.findAll().get(0));
+        peopleService.test();
+
         return "people/index";
     }
 
