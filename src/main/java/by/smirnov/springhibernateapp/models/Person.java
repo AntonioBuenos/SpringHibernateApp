@@ -3,7 +3,6 @@ package by.smirnov.springhibernateapp.models;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
@@ -13,7 +12,6 @@ import javax.validation.constraints.Size;
 
 @Getter
 @Setter
-@ToString
 @NoArgsConstructor
 @Entity
 @Table(name = "Person")
@@ -44,4 +42,13 @@ public class Person {
         this.email = email;
     }
 
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }
