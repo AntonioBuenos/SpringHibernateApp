@@ -9,17 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9085911-b04f-4640-af28-dc2158352c7e" name="Changes" comment="View added.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/repositories/ItemsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/ItemService.java" afterDir="false" />
+    <list default="true" id="e9085911-b04f-4640-af28-dc2158352c7e" name="Changes" comment="More methods added.">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/controllers/PeopleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/repositories/PeopleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/repositories/PeopleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/PeopleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/PeopleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -350,7 +348,8 @@
       <workItem from="1662749377424" duration="5887000" />
       <workItem from="1662827713693" duration="249000" />
       <workItem from="1662828658330" duration="10085000" />
-      <workItem from="1662924066835" duration="6820000" />
+      <workItem from="1662924066835" duration="12278000" />
+      <workItem from="1663219728747" duration="1379000" />
     </task>
     <task id="LOCAL-00001" summary="CRUD fulfilled.">
       <created>1662758091940</created>
@@ -373,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662924135990</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More methods added.">
+      <created>1662936821594</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662936821594</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,24 +400,25 @@
     <MESSAGE value="CRUD fulfilled." />
     <MESSAGE value="Changed to Data JPA." />
     <MESSAGE value="View added." />
-    <option name="LAST_COMMIT_MESSAGE" value="View added." />
+    <MESSAGE value="More methods added." />
+    <option name="LAST_COMMIT_MESSAGE" value="More methods added." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/ItemService.java</url>
-          <line>20</line>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/ItemService.java</url>
-          <line>24</line>
+          <line>27</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/by/smirnov/springhibernateapp/services/PeopleService.java</url>
-          <line>46</line>
+          <line>48</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
